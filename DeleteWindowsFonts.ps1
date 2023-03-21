@@ -1,4 +1,4 @@
-
+#The system reserved partition cannot be updated
 #Get partitie with disk type "System"
 Get-Partition | Where-Object -FilterScript {$_.Type -Eq "System"} | Set-Partition -NewDriveLetter o
 
